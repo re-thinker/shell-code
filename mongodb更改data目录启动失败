@@ -1,0 +1,5 @@
+mongodb更改目录启动失败
+由于linxu中的ＳＥＬinux安全属性的问题，用ls -lZ可以查看出文件属性的区别
+有两种方法可以解决：
+１，关闭ＳＥＬinux
+2，修改文件属性　chcon system_u:object_r:mongod_var_lib_t:s0
